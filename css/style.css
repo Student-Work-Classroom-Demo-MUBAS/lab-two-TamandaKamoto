@@ -1,0 +1,178 @@
+/*
+  Tribute Page — ELE-IWS-521 Lab 2
+  Student: [Your Full Name]
+  ID: [Your Student ID]
+  Subject: Bingu wa Mutharika — economist and 3rd President of Malawi
+           (1934 - 2012)
+*/
+
+/* ============================================
+   Custom colour palette (used throughout)
+   ============================================ */
+:root {
+  --navy: #1E2761;      /* MUBAS primary — headings, header background */
+  --teal: #0D9488;      /* accent — links, blockquote text */
+  --gold: #D4A017;      /* highlight — blockquote border, timeline markers */
+  --cream: #FBF6EC;     /* page background */
+  --ink: #1A1A2E;        /* body text */
+  --grey: #5B6478;       /* muted / secondary text */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ── ELEMENT SELECTOR ──
+   Applies to every <body>, sets the base typography
+   (font-family, font-size, line-height, colour) for the page. */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;        /* 16px — base body text size */
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--cream);
+}
+
+/* ── ELEMENT SELECTOR (grouped) ──
+   Every heading uses the serif display font, bold weight,
+   tighter line-height — consistent across the whole page. */
+h1, h2, h3 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+/* ── ID SELECTOR ──
+   #page-header is unique to this page — the top banner. */
+#page-header {
+  background-color: var(--navy);
+  color: #ffffff;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+#page-header h1 {
+  color: #ffffff;
+  font-size: 2.75rem;     /* larger font size — page title */
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+}
+
+/* ── CLASS SELECTOR ──
+   .subtitle can be reused anywhere a subtitle-style line is needed. */
+.subtitle {
+  font-size: 1.25rem;     /* second distinct font size — subtitle */
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  color: #cfd3e6;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.tribute-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1rem;
+}
+
+/* ── Portrait ── */
+.portrait-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.portrait {
+  width: 260px;
+  max-width: 80%;
+  border-radius: 8px;
+  border: 4px solid var(--navy);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ── CLASS SELECTOR ── */
+.caption {
+  font-size: 0.9rem;
+  color: var(--grey);
+  margin-top: 0.75rem;
+}
+
+.bio-section h2,
+.timeline-section h2,
+.learn-more h2 {
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+.bio-section p {
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+/* ── CLASS SELECTOR ──
+   .highlight marks a handful of key terms without needing
+   an ID on every one of them. */
+.highlight {
+  background-color: #FBEFD3;
+  padding: 0 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* ── ELEMENT SELECTOR ──
+   Every <blockquote> on the page is styled the same way. */
+blockquote {
+  font-size: 1.15rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--teal);
+  border-left: 4px solid var(--gold);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 2.5rem auto;
+  max-width: 600px;
+}
+
+blockquote footer {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--grey);
+}
+
+/* ── Timeline ── */
+.timeline {
+  padding-left: 1.25rem;
+}
+
+.timeline li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.25rem;
+}
+
+.timeline li strong {
+  color: var(--navy);
+}
+
+.learn-more a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--teal);
+}
+
+.learn-more a:hover {
+  color: var(--navy);
+  border-bottom-color: var(--navy);
+}
+
+/* ── ELEMENT SELECTOR ── */
+.site-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--grey);
+  padding: 2rem 1rem 3rem;
+}
