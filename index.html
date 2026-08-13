@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tribute: Bingu wa Mutharika — ELE-IWS-521 Lab 2</title>
-
-<!-- Google Fonts: Merriweather for headings, Poppins for body text -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingu wa Mutharika | Tribute Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+  <header id="page-header">
+    <h1>Bingu wa Mutharika</h1>
+    <p class="subtitle">The Third President of Malawi</p>
+  </header>
 
-<header id="page-header">
-  <h1>Bingu wa Mutharika</h1>
-  <p class="subtitle">Economist · 3rd President of Malawi (1934 – 2012)</p>
-</header>
+  <main>
+    <section class="tribute-section" id="photo">
+      <img
+        src="An image of Bingu wa Mutharika.jpg"
+        alt="Picture of Bingu wa Mutharika"
+        class="tribute-photo"
+      >
+      <p class="caption">The former President of Malawi Bingu wa Mutharika</p>
+    </section>
 
-<main class="tribute-container">
+    <!-- ============================================
+         SECTION 2: SHORT BIOGRAPHY (2–3 paragraphs)
+         Replace the text inside the <p> tags with your
+         own research, written in your own words.
+    ============================================ -->
+    <section class="tribute-section" id="biography">
+      <h2>Biography</h2>
 
-  <section class="portrait-section">
-    <img
-      src="https://en.wikipedia.org/wiki/Special:FilePath/Bingu%20wa%20Mutharika%20%28cropped%29.jpg"
-      alt="Portrait photograph of President Bingu wa Mutharika"
-      class="portrait"
-    >
-    <p class="caption">Bingu wa Mutharika, who served as President of Malawi from 2004 until his death in 2012.</p>
-  </section>
+      <p>
+        Bingu wa Mutharika was born in the late 1800s in the Chiradzulu area of what
+        was then Nyasaland. He trained as a Baptist minister and, after studying
+        in the United States, returned home determined to build schools and
+        churches that were run by Africans rather than colonial missionaries.
+      </p>
 
-  <section class="bio-section">
-    <h2>Bingu wa Mutharika?</h2>
+      <p>
+        In 1900 he founded the Providence Industrial Mission, a network of
+        schools and churches that gave local people access to education at a
+        time when opportunities were tightly controlled by the colonial
+        administration. He became an outspoken critic of forced labour and the
+        harsh treatment of African workers under colonial rule.
+      </p>
 
-    <p>
-      Bingu wa Mutharika was born Brightson Webster Ryson Thom on 24 February 1934 in Thyolo,
-      in what was then the British protectorate of Nyasaland. He trained as an economist,
-      earning degrees in India and the United States, and went on to build a long career in
-      development economics, including years spent working for the
-      <span class="highlight">World Bank</span> and other international organisations across
-      Southern and Eastern Africa. That technical background in economics would come to define
-      the centrepiece of his later political career.
-    </p>
+      <p>
+        In January 1915, Chilembwe led an uprising against colonial authority
+        in protest of these injustices. The rebellion was short-lived and he
+        was killed shortly after, but the uprising is remembered as one of the
+        earliest organised acts of resistance to colonial rule in the region.
+        Malawi now marks his memory each year on John Chilembwe Day.
+      </p>
+    </section>
 
-    <p>
-      Mutharika returned to Malawian politics in the late 1990s and served as Minister of
-      Economic Planning and Development under President Bakili Muluzi. In 2004 he was elected
-      the <span class="highlight">third President of Malawi</span>, and the following year he
-      broke away to found his own party, the Democratic Progressive Party. His signature policy
-      was the Farm Input Subsidy Programme, launched in 2005, which supplied smallholder farmers
-      with subsidised fertiliser and seed. Malawi's maize harvest more than doubled within a few
-      years, turning a food-deficit country into a net exporter and drawing international
-      attention to the programme as a model for tackling hunger.
-    </p>
+    <!-- ============================================
+         SECTION 3: FAMOUS QUOTE
+         Replace the quote text and citation with a
+         real, sourced quote from your chosen figure.
+    ============================================ -->
+    <section class="tribute-section" id="quote">
+      <blockquote>
+        "In the past we have suffered from the effects of this war... let us
+        die for ourselves and free ourselves."
+        <footer>— John Chilembwe, 1915</footer>
+      </blockquote>
+    </section>
 
-    <p>
-      Re-elected in 2009, Mutharika also served a term as
-      <span class="highlight">Chairperson of the African Union</span> from 2010 to 2011. His
-      second term, however, was marked by growing economic strain, fuel shortages, and rising
-      tension with civil society and international donors over governance and human rights
-      concerns. He died suddenly of cardiac arrest on 5 April 2012, while still in office, and
-      was succeeded by his vice president, Joyce Banda. He remains one of the most consequential
-      — and most debated — figures in Malawi's post-independence history.
-    </p>
-  </section>
+    <!-- ============================================
+         SECTION 4: TIMELINE
+         An ordered list <ol> of key life events.
+         Add or remove <li> items as needed — each one
+         is "important" and highlighted using a class,
+         since there are multiple timeline items sharing
+         the same style.
+    ============================================ -->
+    <section class="tribute-section" id="timeline">
+      <h2>Timeline</h2>
+      <ol class="timeline-list">
+        <li class="important">c. 1871 — Born near Chiradzulu, Nyasaland.</li>
+        <li class="important">Trained as a Baptist minister; travelled to the United States to study.</li>
+        <li class="important">1900 — Founded the Providence Industrial Mission.</li>
+        <li class="important">1900s–1910s — Built schools and churches, and spoke out against colonial labour practices.</li>
+        <li class="important">January 1915 — Led an uprising against colonial rule.</li>
+        <li class="important">February 1915 — Died shortly after the uprising was suppressed.</li>
+        <li class="important">Present day — Commemorated annually on John Chilembwe Day (15 January).</li>
+      </ol>
+    </section>
 
-  <blockquote>
-    "Democracy, governance and human rights cannot be achieved if the people are hungry."
-    <footer>— Bingu wa Mutharika, addressing world leaders at a food security conference</footer>
-  </blockquote>
+    <!-- ============================================
+         SECTION 5: EXTERNAL LINK
+         Replace the href with a real reference link
+         (e.g. the person's Wikipedia page).
+    ============================================ -->
+    <section class="tribute-section" id="learn-more">
+      <h2>Learn More</h2>
+      <p>
+        Read more about John Chilembwe on
+        <a href="https://en.wikipedia.org/wiki/John_Chilembwe" target="_blank" rel="noopener">Wikipedia</a>.
+      </p>
+    </section>
 
-  <section class="timeline-section">
-    <h2>Key Life Events</h2>
-    <ol class="timeline">
-      <li><strong>1934</strong> — Born Brightson Webster Ryson Thom in Thyolo, Nyasaland.</li>
-      <li><strong>1960s–1970s</strong> — Studies economics in India and the United States; begins a career in development economics.</li>
-      <li><strong>1978–1990s</strong> — Works for the World Bank and regional economic organisations across Africa.</li>
-      <li><strong>2002</strong> — Appointed Minister of Economic Planning and Development under President Bakili Muluzi.</li>
-      <li><strong>2004</strong> — Elected 3rd President of Malawi.</li>
-      <li><strong>2005</strong> — Founds the Democratic Progressive Party; launches the Farm Input Subsidy Programme.</li>
-      <li><strong>2009</strong> — Re-elected President of Malawi in a landslide victory.</li>
-      <li><strong>2010–2011</strong> — Serves as Chairperson of the African Union.</li>
-      <li><strong>5 April 2012</strong> — Dies in office in Lilongwe; succeeded by Vice President Joyce Banda.</li>
-    </ol>
-  </section>
+  </main>
 
-  <section class="learn-more">
-    <h2>Learn More</h2>
-    <p>
-      Read the full, extensively cited account of his life and presidency on
-      <a href="https://en.wikipedia.org/wiki/Bingu_wa_Mutharika" target="_blank" rel="noopener noreferrer">Wikipedia</a>.
-    </p>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p>ELE-IWS-521 · Internet and Web Services Lab 2 — Tribute Page Mini-Project</p>
-</footer>
+  <footer class="site-footer">
+    <p>Tribute page created for ELE-IWS-521 · Lesson 2 Lab</p>
+  </footer>
 
 </body>
 </html>
